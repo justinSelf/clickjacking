@@ -1,34 +1,8 @@
 ﻿<link href="~/Content/clickjack.css" rel="stylesheet" />
 <div id="form-container">
     <form class="form-signin ">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
     </form>
 </div>
 <iframe src="@Url.Action("SafeIndex")"></iframe>
-
-<script>
-    var hasInit = false;
-    var emailInput = document.getElementById('inputEmail');
-
-    var hasShownEmail = false;
-    emailInput.addEventListener('blur', function () {
-        if (hasInit && !hasShownEmail) {
-            alert('sending your email "' + this.value + '" to evil.com...');
-            hasShownEmail = true;
-        }
-        hasInit = true;
-    });
-
-    hasInit = false;
-
-    var passwordInput = document.getElementById('inputPassword');
-    var hasShownPassword = false;
-    passwordInput.addEventListener('blur', function () {
-        if (hasInit && !hasShownPassword) {
-            alert('sending your password "' + this.value + '" to evil.com...');
-            hasShownPassword = true;
-        }
-        hasInit = true;
-    });
-</script>
