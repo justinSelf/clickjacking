@@ -145,6 +145,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Views\ClickJacking\SafeIndex.cshtml" />
     <Content Include="Views\ClickJacking\NotJacked.cshtml" />
+    <None Include="Properties\PublishProfiles\clickjacking.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
