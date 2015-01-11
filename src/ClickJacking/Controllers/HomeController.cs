@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ClickJacking.Controllers
 {
-    public class ClickJacking : Controller
+    public class HomeController : Controller
     {
         public ActionResult Index()
         {
