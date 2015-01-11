@@ -6,14 +6,14 @@ using System.Web.Mvc;
 
 namespace ClickJacking.Controllers
 {
-    public class HomeController : Controller
+    public class ClickJacking : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult ClickJacked()
+        public ActionResult Jacked()
         {
             return View();
         }
@@ -24,7 +24,7 @@ namespace ClickJacking.Controllers
             return View();
         }
 
-        public ActionResult CannotClickJack()
+        public ActionResult NotJacked()
         {
             return View();
         }
