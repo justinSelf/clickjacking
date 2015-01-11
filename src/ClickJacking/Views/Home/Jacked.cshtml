@@ -6,7 +6,25 @@
     </form>
 </div>
 <iframe src="@Url.Action("Index")"></iframe>
+<style>
+    body {
+        width: 100%;
+        height: 800px;
+        padding: 0;
+    }
 
+    iframe {
+        width: 100%;
+        height: 800px;
+        border: none;
+    }
+
+    #form-container {
+        position: absolute;
+        width: 100%;
+        top: 103px;
+    }
+</style>
 <script>
     var emailInput = document.getElementById('inputEmail');
     var hasShownEmail = false;
@@ -16,7 +34,6 @@
             hasShownEmail = true;
         }
     });
-
 
     var passwordInput = document.getElementById('inputPassword');
     var hasShownPassword = false;

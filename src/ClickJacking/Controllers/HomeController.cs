@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace ClickJacking.Controllers
 {
+    [OutputCache(Location = OutputCacheLocation.Any, Duration = 31536000)]
     public class HomeController : Controller
     {
         public ActionResult Index()
