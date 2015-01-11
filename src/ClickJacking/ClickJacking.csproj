@@ -140,9 +140,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Views\Home\SafeIndex.cshtml" />
-    <Content Include="Views\Home\NotJacked.cshtml" />
+    <Content Include="Views\Home\HeaderProtection.cshtml" />
+    <Content Include="Views\Home\Header.cshtml" />
     <None Include="Properties\PublishProfiles\clickjacking.pubxml" />
+    <Content Include="Views\Home\JavaScript.cshtml" />
+    <Content Include="Views\Home\JavaScriptProtection.cshtml" />
+    <Content Include="Views\Shared\_JsLayout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

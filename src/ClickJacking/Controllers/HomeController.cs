@@ -20,13 +20,23 @@ namespace ClickJacking.Controllers
             return View();
         }
 
-        public ActionResult SafeIndex()
+        public ActionResult HeaderProtection()
         {
             HttpContext.Response.AddHeader("X-Frame-Options", "DENY");
             return View();
         }
 
-        public ActionResult NotJacked()
+        public ActionResult Header()
+        {
+            return View();
+        }
+
+        public ActionResult JavaScript()
+        {
+            return View();
+        }
+
+        public ActionResult JavaScriptProtection()
         {
             return View();
         }
